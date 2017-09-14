@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginService", "LoginService\LoginService.csproj", "{1F6A970E-11E1-40DE-A0D7-46EA1BE88B4B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BFD5C81B-8C42-469E-AEFF-501379A02112}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F6A970E-11E1-40DE-A0D7-46EA1BE88B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6A970E-11E1-40DE-A0D7-46EA1BE88B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6A970E-11E1-40DE-A0D7-46EA1BE88B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6A970E-11E1-40DE-A0D7-46EA1BE88B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD5C81B-8C42-469E-AEFF-501379A02112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD5C81B-8C42-469E-AEFF-501379A02112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD5C81B-8C42-469E-AEFF-501379A02112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD5C81B-8C42-469E-AEFF-501379A02112}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {304A4D5A-661C-4DD9-9B7A-518BF8F50E7D}
+	EndGlobalSection
+EndGlobal

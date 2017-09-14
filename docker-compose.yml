@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  loginservice:
+    image: loginservice
+    build:
+      context: ./LoginService
+      dockerfile: Dockerfile
