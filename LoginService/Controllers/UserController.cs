@@ -46,5 +46,19 @@ namespace LoginService.Controllers
             }
             return new ObjectResult(item);
         }
+
+        [HttpPost]
+        public IActionResult Create([FromBody] User user)
+        {
+            if (user == null)
+            {
+                return BadRequest();
+            }
+
+            _context.Users.Add(user);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("GetUser", new { id = user.Id }, user);
+        }
     }
 }
