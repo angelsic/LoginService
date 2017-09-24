@@ -60,5 +60,27 @@ namespace LoginService.Controllers
 
             return CreatedAtRoute("GetUser", new { id = user.Id }, user);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, [FromBody] User user)
+        {
+            if(user == null || user.Id != id)
+            {
+                return BadRequest();
+            }
+
+            var lst_user = _context.Users.FirstOrDefault(t => t.Id == id);
+            if(user == null)
+            {
+                return NotFound();
+            }
+
+            lst_user.Email = user.Email;
+            lst_user.Password = user.Email;
+
+            _context.Users.Update(lst_user);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
     }
 }
